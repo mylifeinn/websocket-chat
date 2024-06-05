@@ -11,7 +11,7 @@ const ChatRoom = () => {
   const ws = useRef(null);
 
   useEffect(() => {
-    ws.current = new WebSocket('ws://65.49.207.149:8088');
+    ws.current = new WebSocket('ws://65.49.207.149:8088');//这里用localhost无法连上websocket服务
     ws.current.onmessage = (event) => {
       setMessages((prevMessages) => [...prevMessages, JSON.parse(event.data)]);
     };

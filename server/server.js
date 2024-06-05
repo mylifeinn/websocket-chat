@@ -41,7 +41,7 @@ server.on('connection', ws => {
 console.log('WebSocket 服务器运行在 ws://localhost:8088');
 
 // 启动静态文件服务器
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
   console.log(`静态文件服务器运行在 http://localhost:${PORT}`);
 });
