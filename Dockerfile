@@ -35,7 +35,7 @@ WORKDIR /app
 RUN cp -r /app/build /app/server/public
 
 # 暴露前端和后端端口
-EXPOSE 80 8088
+EXPOSE 3000 8088
 
 # 启动后端服务
 CMD ["node", "server/server.js"]
